@@ -8,11 +8,8 @@ import {
   Footer,
   Carousel,
 } from './components';
-import Link from 'next/link';
 
 export default function Home() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const testimonials = [
     {
       quote:
@@ -29,16 +26,6 @@ export default function Home() {
       author: 'Mike Johnson',
     },
   ];
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
-    );
-  };
 
   return (
     <div className="bg-gray-100 font-sans">
