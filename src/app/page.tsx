@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+
 import {
   Navbar,
   Hero,
@@ -7,7 +7,7 @@ import {
   Contact,
   Footer,
   Carousel,
-} from './components';
+} from '../components';
 
 export default function Home() {
   const testimonials = [

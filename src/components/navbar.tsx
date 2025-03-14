@@ -3,19 +3,19 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold text-blue-600">Campaign-Demo</div>
           <div className="hidden md:flex space-x-8">
             <Link href="#features">
-              <a className="text-gray-700 hover:text-blue-600">Features</a>
+              <p className="text-gray-700 hover:text-blue-600">Features</p>
             </Link>
             <Link href="#testimonials">
-              <a className="text-gray-700 hover:text-blue-600">Testimonials</a>
+              <p className="text-gray-700 hover:text-blue-600">Testimonials</p>
             </Link>
             <Link href="#contact">
-              <a className="text-gray-700 hover:text-blue-600">Contact</a>
+              <p className="text-gray-700 hover:text-blue-600">Contact</p>
             </Link>
           </div>
           <button className="md:hidden focus:outline-none">
